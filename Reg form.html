@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+       <thead>
+           <tr>
+             <th>Name</th>
+             <th>Email</th>
+             <th>Age</th>
+           </tr>
+       </thead> 
+       <tbody>
+           <tr>
+               <td>Arif Hossain</td>
+               <td>arif.uxr@gmail.com</td>
+               <td>30</td>
+           </tr>
+       </tbody>
+    </table>
+    <form action="process.php" method="POST">
+        <br>
+        <div>
+   <label for="firstName">First Name</label>
+   <input type="text" name="firstName" value="Arif">
+</div>
+<br>
+<div>
+    <label for="lastname">Last Name</label>
+    <input type="text" name="lastName" value="Hossain">
+</div>
+<br>
+<div>
+    <label for="Email">Email</label>
+    <input type="email" name="Email">
+</div>
+<br>
+<div>
+    <label for="message">Message</label>
+    <textarea name="massage" id="" ></textarea>
+</div>
+<br>
+<div>
+    <label for="Age">Age</label>
+    <input type="Number" value="30">
+</div>
+<br>
+<div>
+    <label for="birthday">Birthday</label>
+    <input type="date">
+</div>
+<br>
+<div>
+    <label for="gender">Gender</label>
+    <select name="Gender" id="">
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+    <option value="Other">Other</option>
+  </select>
+</div>
+<br>
+<input type="submit" name="submit" value="Submit">
+    </form>
+    
+</body>
+</html>
