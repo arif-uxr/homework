@@ -1,0 +1,14 @@
+.header{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    border-bottom: 1px solid #cccc
+}
+
+.nav { 
+padding: 1rem;
+}
+
+.nav:hover{
+    background-color: blueviolet;
+}

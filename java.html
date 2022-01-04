@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        header {
+            background-color:whitesmoke;
+            border: 1px;
+            padding: 30px;
+            text-align: center;
+            font-size: 40px;
+            color: #000b8b;
+        }
+        nav{
+            float: left;
+            width: 30%;
+            height: 400px;
+            background: #cccccc;
+            padding: 30px;
+
+        }
+        nav ul{
+            list-style-type: none;
+            padding: 0%;
+        }
+        article{
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: dodgerblue;
+            height: 400px;
+            color: white;
+        }
+        section::after {
+             content:"";
+             display: table;
+             clear: both;
+        }
+        footer{
+            background-color: darkgray;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+        
+        }
+        @media (max-width:600px) {
+            nav,article {
+                width: 100%;
+                height: auto;
+            }
+        }
+       
+        .grid-container {
+            display: grid;
+        }
+.grid-container--fill {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    
+
+}
+.grid-container--fit {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+.grid-element {
+    background-color: deepskyblue;
+    padding: 20px;
+    color: black;
+    border: 5px solid #cccccc;
+    text-align: center;
+}
+body {
+    padding: 2em;
+}
+hr {
+    margin: 80px;
+}
+   
+    
+    
+
+    </style>
+</head>
+<body>
+    <h1>HTML layout elements and techniques</h1>
+    <p>Websites often display content in multiple columns (like a magazine or a newspaper)</p>
+    <p>HTML has several semantic elements that define the different parts of a web page:</p>
+    <header>
+        <h2>HOXRO</h2>
+    </header>
+    <br>
+<div class="grid-container grid-container--fill">
+    <div class="grid-element">
+        1
+    </div>
+    <div class="grid-element">
+        2
+    </div>
+    <div class="grid-element">
+        3
+    </div>
+    <div class="grid-element">
+        4
+    </div>
+    <div class="grid-element">
+        5
+    </div>
+    <div class="grid-element">
+        6
+    </div>
+    <div class="grid-element">
+        7
+    </div>
+    <div class="grid-element">
+        8
+    </div>
+    <div class="grid-element">
+        9
+    </div>
+    <div class="grid-element">
+        10
+    </div> 
+</div>
+<hr>
+
+
+<div class="grid-container grid-container--fit">
+    <div class="grid-element">
+        1
+    </div>
+    <div class="grid-element">
+        2
+    </div>
+    <div class="grid-element">
+        3
+    </div>
+    <div class="grid-element">
+        4
+    </div>
+    <div class="grid-element">
+        5
+    </div>
+    <div class="grid-element">
+        6
+    </div>
+    <div class="grid-element">
+        7
+    </div>
+    <div class="grid-element"> 
+        8
+    </div>
+    <div class="grid-element">
+        9
+    </div>
+    <div class="grid-element">
+        10
+    </div> 
+</div>
+<p>&#128512;</p>
+<hr>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">Legal Account</a></li>
+                <li><a href="#">Legal CRM</a></li>
+                <li><a href="#">Case Management</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h1>
+            One Window Interface
+            </h1>
+            <p>Designed to save you time and maximize efficiency. Relevant features are logically and intuitively positioned. 
+                Execute different functions without having to open multiple windows. Create documents with ease, 
+                record communications swiftly and accurately, skip from case to case without losing track, 
+                Hoxro LMS Case Management System handles all these from within our flexible and familiar 3 paneled screen.</p>
+                
+            <h1>Case Management</h1>
+            <p>Traditional desktop Case Management Systems have evolved over the last 30 years without the need to address 
+                    issues we face today or having to deal with current working and regulatory requirements. Modern legal case management 
+                    systems need to go beyond maintaining a list of cases and allow users to effectively work on their case load. 
+                    Using Hoxro LMS Legal Management to manage your work is simply a better experience.</p>
+    </article>
+     </section>
+    
+    <footer>
+    <p>Footer</p>
+    <p>Subscribe to Hoxro Communications</p>
+    </footer>
+</body>
+</html>

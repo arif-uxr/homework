@@ -1,140 +1,176 @@
-h1{
-    color: black;
-    font-size: 24px;
-}
-p{
-    color: black;
-    font-size: 18px;
-}
-*{
-    margin: 20px;
-    padding: 0px;
-}
-body{
-    background-color: gainsboro;
-    font: normal 16px arial, Helvetica, Sans-serif;
-    
-    line-height: 1.6em;
-    margin: 1;
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-a{
-   text-decoration: none;
-   color: black;  
+.navv {
+  float: left;
+  justify-content:center;
+  position: sticky;
 }
 
-a:hover{
-    color: blue;
+a:link{
+  display: block;
+  width: 130px;
+  background-color: rgb(33, 173, 228);
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
-a:active{
-    color: green;
+a:hover, a:active {
+  background-color:skyblue;
 }
 
-a:visited{
-    color:blueviolet;
+h1 {
+  color: black;
+  font-size: 24px;
+}
+p {
+  color: black;
+  font-size: 18px;
+}
+* {
+  margin: 20px;
+  padding: 0px;
+}
+body {
+  background-color: gainsboro;
+  font: normal 16px arial, Helvetica, Sans-serif;
+
+  line-height: 1.6em;
+  margin: 1;
 }
 
-.clr{
-    clear: both;
+a {
+  text-decoration: none;
+  color: black;
 }
 
-.button{
-    background-color: cornflowerblue;
-    padding: 10px;
-    border: none;
-}
-.button:hover{
-    background-color: darkcyan;
-    color: white
+a:hover {
+  color: blue;
 }
 
-.box-1{
-    background-color: white;
- border:5px dodgerblue solid;
- padding: 10px;
- margin: 15px;
-
-}
-.container{
-    width: 600;
-    margin: auto;
-}
-.box-1 h1{
-    font-family: tahoma;
-    font-weight: 600;
-    text-decoration: underline;
-    padding-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-    text-align: center;
-}
-.box-1 p{
-    text-align: justify;
-}
-.box-2{
-    border: 5px dotted rgb(253, 43, 218);
-    padding: 20px;
-    margin: 20px;
-}
-.box-2 h1{
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 00.15em;
-    text-decoration: underline;
-
-}
-.box-2 p{
-    padding-top: 20px;
-    text-align: justify;
-    line-height: 1.5em;
-}
-.categories{
-    border: 1px solid red;
-    margin: 20px;
-    padding-left: 20px;
-    border-radius: 8px;
-
-}
-.categories h2{
-    text-align: center;
-    text-decoration: underline;
-    text-transform: uppercase;
-    padding-top: 20px;
+a:active {
+  color: green;
 }
 
-.categories ul{
-    padding: 20px;
-    border-bottom: 1px;
-    list-style: none;
+a:visited {
+  color: blueviolet;
+}
+
+.clr {
+  clear: both;
+}
+
+.button {
+  background-color: cornflowerblue;
+  padding: 10px;
+  border: none;
+}
+.button:hover {
+  background-color: darkcyan;
+  color: white;
+}
+
+.box-1 {
+  background-color: white;
+  border: 5px dodgerblue solid;
+  padding: 10px;
+  margin: 15px;
+}
+.container {
+  width: 600;
+  margin: auto;
+}
+.box-1 h1 {
+  font-family: tahoma;
+  font-weight: 600;
+  text-decoration: underline;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  text-align: center;
+}
+.box-1 p {
+  text-align: justify;
+}
+.box-2 {
+  border: 5px dotted rgb(253, 43, 218);
+  padding: 20px;
+  margin: 20px;
+}
+.box-2 h1 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 00.15em;
+  text-decoration: underline;
+}
+.box-2 p {
+  padding-top: 20px;
+  text-align: justify;
+  line-height: 1.5em;
+}
+.categories {
+  border: 1px solid red;
+  margin: 20px;
+  padding-left: 20px;
+  border-radius: 8px;
+}
+.categories h2 {
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  padding-top: 20px;
+}
+
+.categories ul {
+  padding: 20px;
+  border-bottom: 1px;
+  list-style: none;
 }
 .categories ul li {
-    border-bottom: 1px dotted black;
-    list-style: square;
+  border-bottom: 1px dotted black;
+  list-style: square;
 }
 
-.my-form{
-    padding: 20px;
+.my-form {
+  padding: 20px;
 }
 .my-form .form-group {
-    padding-bottom: 15px;
+  padding-bottom: 15px;
 }
-.my-form input[type="text"], .my-form textarea {
-    padding: 8px;
-    width: 100%;
+.my-form input[type="text"],
+.my-form textarea {
+  padding: 8px;
+  width: 100%;
 }
 
-.block{
-   float: left;
-    width: 33.3%;
-    border: 1px solid black;
-    padding: 10px;
-    box-sizing: border-box;
+.block {
+  float: left;
+  width: 33.3%;
+  border: 1px solid black;
+  padding: 10px;
+  box-sizing: border-box;
 }
 .main-block {
-    float: right;
-    margin-top: 60px;
-    width: 20px;
-    border: solid 1px black;
-    box-sizing:border-box; 
+  float: left;
+  margin-top: 20px;
+  width: 70%;
+
+  box-sizing: border-box;
+  padding: 10px;
+}
+.sidebar {
+  float: right;
+  margin-top: 20px;
+  width: 30%;
+  background-color: white;
+  color: white;
+  box-sizing: border-box;
+  padding: 10px;
 }

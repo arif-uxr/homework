@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+* {
+    box-sizing: border-box;
+}
+.menu {
+    float: left;
+    width:20%;
+}
+.menuitem {
+    padding: 10px;
+    margin: 7px;
+    border-bottom: black 1px solid;
+}
+.main {
+    float: left;
+    width: 60%;
+    padding: 0 20%;
+    overflow: hidden;
+}
+.right {
+    background-color: dodgerblue;
+    float: left;
+    width: 20%;
+    padding: 10pxpx 15px;
+    margin-top: 7px;
+    text-align: center;
+}
+/* @media screen { 
+    width: 100%;  
+} */
+.main {
+    width: 80%;
+    padding: 0;
+}
+.right {
+    width: 100%;
+} 
+.menu, .main, .right {
+    width: 100%;
+}  
+.all-browser > h1,.browser {
+    margin: 10px;
+    padding: 5px;
+    background-color: lightgray;
+}
+.browser {
+    background-color: dodgerblue;
+}
+.browser > h2, p {
+    margin: 4px;
+    font-size: 90%;
+}
+.los {
+    margin: 10px;
+    padding: 5px;
+    background-color: lightsteelblue;
+}
+.header {
+    text-align: center;
+    background-color: limegreen;
+    padding: 10px;
+}
+.footer {
+    text-align: center;
+    padding: 8px;
+    background-color: royalblue;
+    color: white ;
+}
+.sidebar { 
+    width: 30%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+    background-color: gainsboro;
+
+
+}
+.fig{
+    padding: 14px;
+    background-color: gold;
+    text-align: center;
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+    background-color: dodgerblue;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+}
+li a:hover {
+    background-color:mediumturquoise;
+}
+.active {
+    background-color: mediumblue;
+}
+
+@media screen and (max-width: 600px) {
+    ul.topnav li.right,
+    ul.topnav li {float: none;}
+    }
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightgreen;
+}
+
+
+  </style>
+</head>
+<body style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+<ul class="topnav">
+    <li><a class="active" href="home">Home</a></li>
+    <li><a href="news">News</a></li>
+    <li><a href="about">About</a></li>
+    <li><a href="blog">Blog</a></li>
+    </ul>
+
+    <div class="dropdown">
+        <button class="dropbtn">Dropdown</button>
+        <div class="dropdown-content">
+         <a href="https://www.facebook.com/arifhossain.aiyan">Arif</a>
+         <a href="https://www.facebook.com/arifhossain.aiyan">Arif</a> 
+         <a href="https://www.facebook.com/arifhossain.aiyan">Arif</a>    
+            </div>
+        </div>
+
+    <div style="background-color: darkgrey; padding: 20px; text-align: center;">
+   <h1>London</h1>
+   <h3>Resize the browser window</h3>        
+    </div>
+    <div>
+        <div class="menu">
+            <div class="menuitem">The walk</div>
+            <div class="menuitem">Transport</div>
+            <div class="menuitem">History</div>
+            <div class="menuitem">Gallery</div>
+
+        </div>
+
+        <div class="main">
+            <h2>The Walk</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Enim earum deserunt laborum excepturi eos magni laudantium a quod possimus itaque.
+            </p>
+            <img src="https://images.unsplash.com/photo-1533929736458-ca588d08c8be?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" style="width: 100%;" alt="london">
+        </div>
+        <div class="right">
+            <h2>Want to go?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, tempore.</p>
+            <h2>Where to go</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, magnam!</p>
+            <h2>What the price?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, aperiam?</p>
+        </div>
+    </div>
+    <div style="background-color: darkgray; text-align: center; padding: 30px; margin-top: 10px;font-size: 20px;"> This web page is a part of a demonstration of fluid web design made by w3schools.com. 
+        Resize the browser window to see the content respond to the resizing.</div>
+
+        <div style="background-color: deepskyblue; padding: 15px; text-align: center;">
+        <h2 style="font-size: 5vw;">Hello Hoxro
+</h2>
+<p style="font-size: 3vw;"">Resize the browser window to see how the text size scales</p>
+
+</div>
+<div>
+    
+    </div>
+    <section class="los">
+        <h1>Hoxro LMS</h1>
+        <p>Hoxro LMS Case Management System is a legal case management system, practice 
+             management system and an all in one tool designed to 
+             solve some of the biggest pain points lawyers face with their current legal software.
+             Every feature & functionality of the Case Management System is designed to improve your productivity, 
+             performance & profitability. With the emergence of Artificial Intelligence, Machine learning and Block Chain 
+             Technology, the landscape of Legal Tech is going through a revolution and Hoxro LMS Case Management System has readily embraced this.</p>
+        </section>
+        
+        <article class="all-browser">
+            <header class="header">
+                <h1> Most Popular Browsers</h1>
+        </header>
+           <article class="browser">
+            <h2>Google Chrome</h2>
+            <p>Google chrome is a web browser develop by Google, release in 2008. Chrome is the worlds most popular web browser today!</p>
+            </article>
+        <article class="browser">
+            <h2>Mozilla Firefox</h2>
+            <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+            </article>    
+        <article class="browser">
+            <h2>Microsoft Edge</h2>
+            <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+            </article>    
+</article>
+<aside class="sidebar">
+    <p>Mail merge allows data to be readily assimilated form the relevant matter details. This is a very powerful tool which can generate large documents quickly and accurately. Letter and attendances that are set in the Hoxro LMS Case Management System library can be mail merged.
+        </p>
+    </aside>
+    <h2 class="fig">Figure and Figcaption elements</h2>
+    <figure>
+        <img src="https://images.unsplash.com/photo-1637092279967-021942a8958a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80" alt="turtle" style="width:100%">
+        </figure>
+        <figcaption>Pic: Turtle, place: abu dhabi sea beach</figcaption>
+
+<h1>the less than sign: &lt;</h1>
+
+<h1>the greater than sign: &gt;</h1>
+<p>I will display &#65; &#66; &#67;</p> 
+
+        <footer class="footer">
+    <p>Copyright © 2018 HOXRO Legal Software. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
